@@ -72,7 +72,8 @@ const proposalsQuery = `query Proposals {
       first: 1,
       skip: 0,
       where: {
-        space_in: ["studiodao.eth"]
+        space_in: ["studiodao.eth"],
+        state: "active"
       },
       orderBy: "created",
       orderDirection: desc
